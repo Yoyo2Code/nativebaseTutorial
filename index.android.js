@@ -15,6 +15,13 @@ import {
 class nativebaseTutorial extends Component {
   render() {
     return (
+      <Header searchBar rounded>
+    <InputGroup>
+        <Icon name="ios-search" />
+        <Input placeholder="Search" value={this.state.search}  onChangeText={(text) => this.setState({search:text})} onSubmitEditing={()=>this.search()}/>
+    </InputGroup>
+    <Button transparent onPress={()=>this.search()}>Go</Button>
+</Header>
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!

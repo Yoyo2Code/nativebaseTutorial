@@ -24,7 +24,8 @@ class nativebaseTutorial extends Component {
         </Text>
         <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          Cmd+D or shake for dev menu {'\n'}
+          React only renders rapped elements
         </Text>
       </View>
     );
